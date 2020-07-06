@@ -11,11 +11,11 @@ import matplotlib.pyplot as plt
 
 def get_tweets(search_word, start_date, end_date, max_tweets):
     """
-    :param search_word: word to be searched
-    :param start_date: date to begin search YYYY-MM-DD
-    :param end_date: date to end search YYYY-MM-DD
-    :param max_tweets: maximum number of tweets to return
-     NW: anything over 10,000 tweets took to long to return for me, also i tend to keep the date range close to a week
+    :param search_word: String word to be searched
+    :param start_date: String date to begin search YYYY-MM-DD
+    :param end_date: String date to end search YYYY-MM-DD
+    :param max_tweets: Int maximum number of tweets to return
+     NW: anything over 10,000 tweets took to long to return for me, also I tend to keep the date range close to a week
     to not miss out on any tweets.
     """
     tweetCriteria = got.manager.TweetCriteria().setQuerySearch(search_word) \
